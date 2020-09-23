@@ -1,0 +1,17 @@
+version = 1
+
+test_patterns = ["tests/**"]
+
+exclude_patterns = [
+    "features/**",
+    "src/images/**",
+    "src/css/**",
+    "src/tpl/**"
+]
+
+[[analyzers]]
+name = "javascript"
+enabled = true
+
+  [analyzers.meta]
+  environment = ["nodejs"]
